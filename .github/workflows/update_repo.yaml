@@ -52,7 +52,7 @@ jobs:
         # else
         #     rm -rf "$direc/*.pkg.tar.zst"
         # fi
-        cd buildworkdir/DolphinOS-PKGBUILDs
+        cd buildworkdir/dolphinos-pkgbuilds
         dirs=($(find * -maxdepth 0 -type d))
         for dir in "${dirs[@]}"
         do 
