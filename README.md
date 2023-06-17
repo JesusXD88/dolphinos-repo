@@ -1,2 +1,2 @@
-# dolphinos-repo
-DolphinOS temporary repository
+# DolphinOS-repo
+Arch Linux repository for DolphinOS
