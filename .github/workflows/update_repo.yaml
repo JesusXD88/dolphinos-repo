@@ -42,7 +42,7 @@ jobs:
         sudo -u builduser git clone https://gitlab.com/dolphinos-development/dolphinos-pkgbuilds.git
     - name: Build packages
       run: |
-        # direc="x86_64"
+        direc="x86_64"
         # if [[ "${{inputs.build_calamares}}" == "false" ]]; then
         #     find "$direc" ! -name "dolphinos-calamares*.pkg.tar.zst" -name "*.pkg.tar.zst" -type f -delete
         #     cfgs="$direc/dolphinos-calamares-configs*.pkg.tar.zst"
@@ -50,7 +50,7 @@ jobs:
         #         rm "$cfgs"
         #     fi
         # else
-        #     rm -rf "$direc/*.pkg.tar.zst"
+        rm -rf "$direc/*.pkg.tar.zst"
         # fi
         cd buildworkdir/dolphinos-pkgbuilds
         dirs=($(find * -maxdepth 0 -type d))
