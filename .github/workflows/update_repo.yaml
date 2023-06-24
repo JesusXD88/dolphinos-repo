@@ -50,7 +50,7 @@ jobs:
         #         rm "$cfgs"
         #     fi
         # else
-        rm -rf "$direc/*.pkg.tar.zst"
+        rm -rf $direc/*.pkg.tar.zst
         # fi
         cd buildworkdir/dolphinos-pkgbuilds
         dirs=($(find * -maxdepth 0 -type d))
