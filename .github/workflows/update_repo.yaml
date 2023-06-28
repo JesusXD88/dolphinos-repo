@@ -39,7 +39,7 @@ jobs:
     - name: Clone PKGBUILDs repository
       run: |
         cd buildworkdir
-        sudo -u builduser git clone https://gitlab.com/dolphinos-development/dolphinos-pkgbuilds.git
+        sudo -u builduser git clone https://github.com/DolphinOS-Development/DolphinOS-PKGBUILDs.git
     - name: Build packages
       run: |
         direc="x86_64"
